@@ -42,7 +42,7 @@ class NoteCard extends StatelessWidget {
                   ),
                 ),
                 IconButton(
-                  icon: const Icon(Icons.edit, color: Colors.blue),
+                  icon: const Icon(Icons.edit, color: Colors.orange),
                   onPressed: onEdit,
                   tooltip: 'Edit Note',
                 ),

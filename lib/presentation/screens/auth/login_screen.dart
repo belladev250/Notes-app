@@ -1,10 +1,8 @@
-/// Authentication Screen
-/// 
 /// Handles both sign-in and sign-up functionality with:
 /// - Form validation for email and password
 /// - Loading states during authentication
-/// - Error handling and user feedback
-/// - Toggle between sign-in and sign-up modes
+
+library;
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -58,7 +56,7 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text(_isSignUp ? 'Sign Up' : 'Sign In'),
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.orange,
         foregroundColor: Colors.white,
       ),
       body: BlocConsumer<AuthBloc, AuthState>(
@@ -88,18 +86,22 @@ class _LoginScreenState extends State<LoginScreen> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
-                      SizedBox(height: MediaQuery.of(context).size.height * 0.1),
+                      SizedBox(
+                          height: MediaQuery.of(context).size.height * 0.1),
                       const Icon(
                         Icons.note_alt_outlined,
                         size: 80,
-                        color: Colors.blue,
+                        color: Colors.orange,
                       ),
                       const SizedBox(height: 24),
                       Text(
                         _isSignUp ? 'Create Account' : 'Welcome Back',
-                        style: Theme.of(context).textTheme.headlineMedium?.copyWith(
+                        style: Theme.of(context)
+                            .textTheme
+                            .headlineMedium
+                            ?.copyWith(
                               fontWeight: FontWeight.bold,
-                              color: Colors.blue,
+                              color: Colors.orange,
                             ),
                         textAlign: TextAlign.center,
                       ),
@@ -145,7 +147,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       ElevatedButton(
                         onPressed: state is AuthLoading ? null : _submit,
                         style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.blue,
+                          backgroundColor: Colors.orange,
                           foregroundColor: Colors.white,
                           padding: const EdgeInsets.symmetric(vertical: 16),
                           shape: RoundedRectangleBorder(
@@ -158,7 +160,8 @@ class _LoginScreenState extends State<LoginScreen> {
                                 width: 20,
                                 child: CircularProgressIndicator(
                                   strokeWidth: 2,
-                                  valueColor: AlwaysStoppedAnimation<Color>(Colors.white),
+                                  valueColor: AlwaysStoppedAnimation<Color>(
+                                      Colors.white),
                                 ),
                               )
                             : Text(
@@ -181,7 +184,8 @@ class _LoginScreenState extends State<LoginScreen> {
                               : 'Don\'t have an account? Sign Up',
                         ),
                       ),
-                      SizedBox(height: MediaQuery.of(context).size.height * 0.1),
+                      SizedBox(
+                          height: MediaQuery.of(context).size.height * 0.1),
                     ],
                   ),
                 ),

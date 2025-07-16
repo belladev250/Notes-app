@@ -64,7 +64,7 @@ class _NoteInputDialogState extends State<NoteInputDialog> {
         ),
         ElevatedButton(
           onPressed: _save,
-          style: ElevatedButton.styleFrom(backgroundColor: Colors.blue),
+          style: ElevatedButton.styleFrom(backgroundColor: Colors.orange),
           child: Text(
             widget.initialContent == null ? 'Add' : 'Update',
             style: const TextStyle(color: Colors.white),
