@@ -64,7 +64,7 @@ The app follows a unidirectional data flow:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/twizelissa/noteapp_new.git
+   git clone https://github.com/belladev250/noteapp_new.git
    cd noteapp_new
    ```
 
