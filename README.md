@@ -6,17 +6,17 @@ A modern Flutter notes application with Firebase backend, featuring user authent
 ![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white)
 ![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
 
-## ✨ Features
+##  Features
 
-- 🔐 **User Authentication** - Sign up, sign in, and secure logout
-- 📝 **Note Management** - Create, edit, delete, and view notes
-- ☁️ **Cloud Sync** - Real-time synchronization with Firebase Firestore
-- 🎨 **Modern UI** - Clean Material Design interface
-- 🔄 **State Management** - BLoC pattern for predictable state handling
-- ✅ **Form Validation** - Email and password validation
-- 📱 **Cross Platform** - Runs on Android, iOS, Web, Windows, macOS, and Linux
+-  **User Authentication** - Sign up, sign in, and secure logout
+-  **Note Management** - Create, edit, delete, and view notes
+- ☁ **Cloud Sync** - Real-time synchronization with Firebase Firestore
+-  **Modern UI** - Clean Material Design interface
+-  **State Management** - BLoC pattern for predictable state handling
+-  **Form Validation** - Email and password validation
+-  **Cross Platform** - Runs on Android, iOS, Web, Windows, macOS, and Linux
 
-## 🏗️ Architecture
+## structure
 
 This project follows **Clean Architecture** principles with clear separation of concerns:
 
@@ -283,23 +283,8 @@ noteapp_new/
 
 ## 👨‍💻 Author
 
-**twizelissa**
-- GitHub: [@twizelissa](https://github.com/twizelissa)
-- Email: twizelissa@gmail.com
+**Bella Melissa**
+- GitHub: [@twizelissa](https://github.com/belladev250)
+- Email: melissaineza8@gmail.com
 
-## 🙏 Acknowledgments
 
-- Flutter team for the amazing framework
-- Firebase team for the backend services
-- The Dart and Flutter community for continuous support
-
-## 📞 Support
-
-If you have any questions or need help with setup, feel free to:
-- Open an issue on GitHub
-- Contact me via email
-- Check the Flutter documentation
-
----
-
-⭐ **Star this repository if you found it helpful!**
